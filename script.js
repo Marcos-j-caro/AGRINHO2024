@@ -19,6 +19,7 @@ function openTab(tabId) {
     const correspondingTabLink = document.querySelector(`.tab-link[href="#${tabId}"]`);
     correspondingTabLink.classList.add('active');
 }
+
 function toggleDarkMode() {
     const body = document.body;
     body.classList.toggle('dark-mode');

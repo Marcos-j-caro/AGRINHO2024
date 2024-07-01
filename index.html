@@ -3,36 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Transição Rural-Urbana: Um Guia Interativo</title>
+    <title>Raízes Urbanas e Rurais: Um Guia para Transição</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-    <link rel="stylesheet" href="styles.css">
-    <!-- Adicionando Font Awesome para ícones -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <header>
         <div class="container">
-            <h1>Transição Rural-Urbana</h1>
-            <p>Um Guia Interativo</p>
+            <h1>Raízes Urbanas e Rurais</h1>
+            <p>Um Guia para Transição</p>
         </div>
+        
+        <button id="dark-mode-toggle" onclick="toggleDarkMode()">
+            <i class="fas fa-moon"></i>
+        </button>
     </header>
 
     <nav class="tabs">
         <div class="container">
             <ul>
                 <li><a href="#introducao" class="tab-link active" onclick="openTab('introducao')">Introdução</a></li>
+                <li><a href="#vida-urbana" class="tab-link" onclick="openTab('vida-urbana')">Vida Urbana</a></li>
                 <li><a href="#vida-rural" class="tab-link" onclick="openTab('vida-rural')">Vida Rural</a></li>
-                <li><a href="#ambiente-urbano" class="tab-link" onclick="openTab('ambiente-urbano')">Ambiente Urbano</a></li>
-                <li><a href="#economia-oportunidades" class="tab-link" onclick="openTab('economia-oportunidades')">Economia</a></li>
-                <li><a href="#desafios-beneficios" class="tab-link" onclick="openTab('desafios-beneficios')">Desafios e Benefícios</a></li>
+                <li><a href="#oportunidades" class="tab-link" onclick="openTab('oportunidades')">Oportunidades</a></li>
+                <li><a href="#desafios" class="tab-link" onclick="openTab('desafios')">Desafios</a></li>
             </ul>
         </div>
     </nav>
 
     <section id="introducao" class="tab-content active">
         <div class="container">
-            <h2>Introdução à Transição Rural-Urbana</h2>
-            <p>A transição do campo para a cidade é um fenômeno global que impacta milhões de pessoas todos os anos. Este guia explora as mudanças sociais, econômicas e culturais associadas a essa transição.</p>
+            <h2>Introdução à Transição Cidade-Campo</h2>
+            <p>A mudança da vida urbana para a vida rural é uma tendência crescente. Este guia explora as razões, benefícios e desafios dessa transição.</p>
+            <img src="campo.jpeg" alt="Transição Cidade-Campo" class="responsive-img">
+            <p>A transição da vida na cidade para o campo pode trazer uma série de benefícios para a saúde física e mental. A redução do estresse, a proximidade com a natureza e um ritmo de vida mais lento são apenas alguns dos fatores que atraem as pessoas para áreas rurais.</p>
+        </div>
+    </section>
+
+    <section id="vida-urbana" class="tab-content">
+        <div class="container">
+            <h2>Aspectos da Vida Urbana</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Conveniência e Acessibilidade</h3>
+                    <img src="https://via.placeholder.com/400x200" alt="Conveniência Urbana" class="responsive-img">
+                    <p>As cidades oferecem uma variedade de serviços e conveniências que facilitam a vida diária, como transporte público, comércio e serviços de saúde. A acessibilidade a diferentes recursos é uma das grandes vantagens de se viver em áreas urbanas.</p>
+                </div>
+                <div class="card">
+                    <h3>Vida Cultural e Social</h3>
+                    <img src="https://via.placeholder.com/400x200" alt="Cultura Urbana" class="responsive-img">
+                    <p>A vida urbana é rica em oportunidades culturais e sociais, com acesso a teatros, museus, restaurantes e eventos diversos. As cidades são centros vibrantes de cultura, onde sempre há algo novo para explorar e experimentar.</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -41,60 +63,50 @@
             <h2>Aspectos da Vida Rural</h2>
             <div class="grid">
                 <div class="card">
+                    <h3>Contato com a Natureza</h3>
+                    <img src="https://via.placeholder.com/400x200" alt="Natureza Rural" class="responsive-img">
+                    <p>A vida no campo proporciona um contato mais próximo com a natureza, oferecendo um ambiente mais tranquilo e saudável. Respirar ar puro, apreciar a paisagem e desfrutar de um estilo de vida mais sustentável são vantagens significativas.</p>
+                </div>
+                <div class="card">
+                    <h3>Comunidade e Tradições</h3>
+                    <img src="https://via.placeholder.com/400x200" alt="Comunidade Rural" class="responsive-img">
+                    <p>As comunidades rurais são geralmente mais unidas e preservam tradições e costumes locais que enriquecem a vida social. Festividades locais, feiras e eventos comunitários são comuns e fortalecem os laços entre os moradores.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="oportunidades" class="tab-content">
+        <div class="container">
+            <h2>Oportunidades no Campo</h2>
+            <div class="grid">
+                <div class="card">
                     <h3>Agricultura e Pecuária</h3>
-                    <p>A vida rural é fortemente marcada pela agricultura e pecuária, fundamentais para a economia e subsistência das comunidades. O trabalho no campo envolve cultivo de alimentos e criação de animais.</p>
+                    <img src="https://via.placeholder.com/400x200" alt="Agricultura e Pecuária" class="responsive-img">
+                    <p>O campo oferece oportunidades em setores como agricultura e pecuária, essenciais para a economia e sustentabilidade das comunidades. Trabalhar na terra e com animais pode ser muito recompensador e permite um estilo de vida autossuficiente.</p>
                 </div>
                 <div class="card">
-                    <h3>Tradições e Cultura</h3>
-                    <p>As tradições rurais são preservadas através de festividades locais, costumes familiares e celebrações religiosas. A cultura rural é rica em música, dança e artesanato tradicional.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="ambiente-urbano" class="tab-content">
-        <div class="container">
-            <h2>Adaptação ao Ambiente Urbano</h2>
-            <div class="grid">
-                <div class="card">
-                    <h3>Habitação e Infraestrutura</h3>
-                    <p>Na cidade, a habitação é predominantemente em prédios e apartamentos. A infraestrutura urbana inclui sistemas de transporte desenvolvidos, como metrôs e ônibus, além de serviços públicos.</p>
-                </div>
-                <div class="card">
-                    <h3>Transporte e Mobilidade</h3>
-                    <p>O transporte urbano oferece maior mobilidade com diversas opções, como bicicletas compartilhadas, aplicativos de transporte e carros próprios. Isso facilita o deslocamento diário dentro da cidade.</p>
+                    <h3>Turismo Rural</h3>
+                    <img src="https://via.placeholder.com/400x200" alt="Turismo Rural" class="responsive-img">
+                    <p>O turismo rural está em crescimento, proporcionando novas fontes de renda e desenvolvimento para as áreas rurais. Hospedagem em fazendas, passeios ecológicos e outras atividades turísticas estão se tornando cada vez mais populares.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="economia-oportunidades" class="tab-content">
+    <section id="desafios" class="tab-content">
         <div class="container">
-            <h2>Economia e Oportunidades</h2>
+            <h2>Desafios da Transição</h2>
             <div class="grid">
                 <div class="card">
-                    <h3>Oportunidades de Emprego</h3>
-                    <p>Nas cidades, há uma variedade maior de oportunidades de emprego em setores como tecnologia, serviços financeiros, educação e saúde. Isso atrai pessoas em busca de melhores condições de trabalho.</p>
+                    <h3>Adaptação e Infraestrutura</h3>
+                    <img src="https://via.placeholder.com/400x200" alt="Adaptação Rural" class="responsive-img">
+                    <p>A adaptação à vida rural pode ser desafiadora devido à diferença na infraestrutura e serviços disponíveis. A falta de alguns confortos urbanos e a necessidade de se adaptar a um novo ritmo de vida são obstáculos a serem superados.</p>
                 </div>
                 <div class="card">
-                    <h3>Educação e Desenvolvimento</h3>
-                    <p>As instituições educacionais urbanas oferecem uma gama diversificada de cursos e programas. O acesso a educação de qualidade é uma vantagem significativa para o desenvolvimento pessoal e profissional.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="desafios-beneficios" class="tab-content">
-        <div class="container">
-            <h2>Desafios e Benefícios da Migração</h2>
-            <div class="grid">
-                <div class="card">
-                    <h3>Desafios Psicológicos e Emocionais</h3>
-                    <p>A adaptação à vida urbana pode ser desafiadora emocionalmente, devido à separação de familiares, amigos e a familiaridade do ambiente rural. A solidão e o estresse são comuns no início da migração.</p>
-                </div>
-                <div class="card">
-                    <h3>Benefícios de Vida Urbana</h3>
-                    <p>Os benefícios incluem acesso a serviços de saúde avançados, melhor infraestrutura educacional, oportunidades de carreira e uma vida cultural diversificada. A cidade oferece um estilo de vida dinâmico e cosmopolita.</p>
+                    <h3>Isolamento e Conexões</h3>
+                    <img src="https://via.placeholder.com/400x200" alt="Isolamento Rural" class="responsive-img">
+                    <p>O isolamento social e a distância de centros urbanos podem ser um desafio para quem está acostumado com a vida na cidade. Construir novas conexões sociais e se adaptar a um ambiente menos movimentado são aspectos importantes dessa transição.</p>
                 </div>
             </div>
         </div>
@@ -102,27 +114,10 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Transição Rural-Urbana</p>
+            <p>&copy; 2024 Da Cidade para o Campo</p>
         </div>
     </footer>
 
     <script src="script.js"></script>
-</body>
-</html>
-
- <!-- Botão com ícone de lua -->
- <button id="dark-mode-toggle" onclick="toggleDarkMode()">
-    <i class="fas fa-moon"></i> <!-- Ícone de lua da Font Awesome -->
-</button>
-
-<script>
-    function toggleDarkMode() {
-        const body = document.body;
-        body.classList.toggle('dark-mode');
-    }
-</script>
-
-
-
 </body>
 </html>

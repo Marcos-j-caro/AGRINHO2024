@@ -1,4 +1,4 @@
-/* Reset de estilos básicos */
+
 * {
     margin: 0;
     padding: 0;
@@ -8,16 +8,17 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    background-color: #ffffff;
-    color: #888888;
-    transition: background-color 0.3s ease;
+    background-color: #e7e7e7;
+    color: #000000;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 header {
     background-color: #4CAF50;
-    color: rgb(255, 255, 255);
+    color: #ffffff;
     text-align: center;
     padding: 20px 0;
+    position: relative;
 }
 
 .container {
@@ -35,6 +36,7 @@ header {
     justify-content: center;
     list-style-type: none;
     padding: 10px 0;
+    flex-wrap: wrap;
 }
 
 .tabs ul li {
@@ -75,68 +77,23 @@ h2 {
 }
 
 .card {
-    background-color: #fcf6f6;
+    background-color: #838383;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(255, 253, 253, 0.1);
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px 0;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-
-.card h3 {
-    color: #098d10;
-}
-
-.card p {
-    color: #030303;
-}
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #ffffff; /* cor de fundo padrão */
-    color: #333; /* cor do texto padrão */
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.dark-mode {
-    background-color: #2e2e2e; /* cor de fundo no modo escuro */
-    color: #fff; /* cor do texto no modo escuro */
-}
-
-header {
-    background-color: #378039;
-    color: rgb(253, 253, 253);
-    text-align: center;
-    padding: 20px 0;
-}
-
-.container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-section {
-    padding: 50px 0;
-    text-align: center;
+.card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
 }
 
 footer {
-    background-color: #333;
+    background-color: #000000;
     color: white;
     text-align: center;
     padding: 20px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
 }
 
 button {
@@ -144,7 +101,7 @@ button {
     top: 20px;
     right: 20px;
     padding: 10px 20px;
-    background-color: #2f3d30;
+    background-color: #02bd2400;
     color: white;
     border: none;
     cursor: pointer;
@@ -154,4 +111,33 @@ button {
 
 button:hover {
     background-color: #45a049;
+}
+
+.dark-mode {
+    background-color: #2e2e2e;
+    color: #ffffff;
+}
+
+footer {
+    background-color: #222;
+    color: #ccc;
+}
+
+@media (max-width: 768px) {
+    .tabs ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tabs ul li {
+        margin-bottom: 10px;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+
+    header {
+        padding: 10px 0;
+    }
 }
