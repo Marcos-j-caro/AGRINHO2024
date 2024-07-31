@@ -52,7 +52,7 @@ header {
 }
 
 .tabs ul li a.active,
-.tabs ul li a:hover {
+.tabs ul li a:hovver {
     background-color: #039608;
 }
 
@@ -78,7 +78,8 @@ h2 {
 
 .card {
     background-color: #838383;
-    padding: 20px;
+    padding: 20px;    border: px solid #000; /* Borda sólida de 2 pixels com cor preta */
+
     box-shadow: 0 0 10px rgba(255, 253, 253, 0.1);
     transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -122,6 +123,17 @@ footer {
     background-color: #222;
     color: #ccc;
 }
+.imagens{
+    text-align: center; 
+    display: block; 
+            margin: 0 auto; 
+            max-width: 100%; 
+            box-sizing: border-box; 
+            width: 200%; 
+            height: auto; 
+
+    }
+    
 
 @media (max-width: 768px) {
     .tabs ul {
